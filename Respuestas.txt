@@ -1,0 +1,30 @@
+1.Por la célula
+
+- PARA PENSAR 🤔: 
+¿A qué se refiere el texto con la frase “los genes “informacionales” tienen su origen en el reino archaea, 
+mientras que los genes “operacionales” tienen su origen en el reino bacteria”?
+
+La frase "los genes “informacionales” tienen su origen en el reino archaea, mientras que los genes “operacionales” 
+tienen su origen en el reino bacteria", se refiere a que las celulas eucariotas evolucionaron a partir de la simbiosis 
+de celulas procariotas las cuales pertenecian al reino bacteria y al reino Archaea, entonces los genes "informacionales" 
+de la celula eucariota provienen de los Archaea, y los genes "operacionales" provienen de las bacterias.
+
+
+- Enumerá las diferencias que existen entre una célula procariota y eucariota.
+
+1. Las celulas eucariotas tienen un nucleo bien definido, en cambio las procariotas no.
+2. Las celulas eucariotas son de gran tamaño, y las procariotas son pequeñas.
+3. Las eucariotas contienen cromosomas lineales, y las procariotas circulares.
+4. Las eucariotas poseen una membrana nuclear con el complejo del poro nuclear, mientras que las procariotas no poseen
+membrana que defina el espacio.
+5. En las eucariotas la transcripción y traducción ocurren de manera separada, mientras que en las procariotas 
+ocurren de manera simultanea.
+6. Las eucariotas tienen un sistema a de endomembrana y otras organelas (lisosomas, peroxisomas, mitocondrias, 
+cloroplastos, vacuolas).
+7. Las eucariotas se reproducen de manera sexual y asexual, y las procariotas solamente de manera asexual.
+8. La division de las eucariotas es por mitosis, y las procariotas es por fision binaria.
+9. Las eucariotas tienen complejos proteicos (tubulina, actina)
+10. Las células eucariotas también poseen un “sistema esquelético”, un citoesqueleto.
+
+
+

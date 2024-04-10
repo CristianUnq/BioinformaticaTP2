@@ -1,0 +1,25 @@
+
+def region_promotora_gen(secuencia_ADN):
+    regiones = []
+    caja_tata = 'TATAAA'
+    print( "Regiones promotoras de un gen")
+    amount_region = 0
+    while caja_tata in secuencia_ADN:
+        amount_region = amount_region + 1
+        begin_secuence_gen = secuencia_ADN.find(caja_tata)
+        end_secuence_gen = secuencia_ADN.find(caja_tata, end_of_caja_tata(begin_secuence_gen, caja_tata))
+        print(str(amount_region) + ". " + secuencia_ADN[end_of_caja_tata(begin_secuence_gen, caja_tata) : end_secuence_gen])
+        print("")
+        secuencia_ADN = secuencia_ADN[end_of_caja_tata(end_secuence_gen, caja_tata) : len(secuencia_ADN)]
+
+def end_of_caja_tata(position, caja_tata): 
+    return position + len(caja_tata)
+
+def main():
+    secuencia_ADN = input("Secuencia de ADN: ")
+    region_promotora_gen(secuencia_ADN)
+
+if __name__ == "__main__":
+    main()
+
+
