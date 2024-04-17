@@ -9,7 +9,7 @@ tienen su origen en el reino bacteria", se refiere a que las celulas eucariotas 
 de celulas procariotas las cuales pertenecian al reino bacteria y al reino Archaea, entonces los genes "informacionales" 
 de la celula eucariota provienen de los Archaea, y los genes "operacionales" provienen de las bacterias.
 
-
+Desafio1:
 - Enumerá las diferencias que existen entre una célula procariota y eucariota.
 
 1. Las celulas eucariotas tienen un nucleo bien definido, en cambio las procariotas no.

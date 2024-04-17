@@ -1,0 +1,73 @@
+import sys
+
+vidas = 3
+
+def pregunta(preguntaString, respuestaCorrecta):
+    global vidas
+    while vidas > 0:
+        respuesta = input(preguntaString)
+        if respuesta == respuestaCorrecta:
+            print("Correcto!")
+            print("")
+            break
+        else:
+            print("Incorrecto")
+            vidas = vidas - 1
+            print("Pierdes una vida " + str(vidas) + "/3")
+            print("")
+    else:
+        print("Has perdido :(")
+        print("")
+        volverAJugar()
+        sys.exit()
+
+def jugar_expresion_genica():
+    print("Hola soy una celula eucariota. Para que la expresion genica suceda, deberas seguir correctamente el proceso de " +
+          "transcripcion y traduccion. Para esto, deberas responder de manera correcta los puntos que te voy a ir marcando. " +
+          "Tendras 3 vidas, si respondes incorrectamente 3 preguntas, perderas el juego. ¿Listo? ¡EMPECEMOS!")
+    print("")
+    pregunta("Dentro de una celula eucariota, existe el nucleo. Este contiene el genoma que esta dividido en pares de cromosomas.\n Ingrese la catidad de cromosomas que tienen los seres humanos: ", "23")
+    pregunta("Cada cromosoma esta formado por una hebra larga de ADN, la cual esta empaquetado al rededor de unas proteinas.\n Como es el nombre de estas proteinas? (Sistona / Histona / ARN mensajero / Polimerasa): ", "Histona")    
+    pregunta("Dentro del ADN hay secciones llamadas genes, y cuando uno de estos genes es activado una encima se une al extremo del gen.\n Mencione el nombre de esta encima: (ARN mensajero / Aminoacido / ARN polimerasa / Citoplasma): ", "ARN polimerasa")
+    pregunta("La encima, se desplaza por el ADN creando una hebra de ____________ a partir de bases libres que se encuentran en el nucleo. El codigo del ADN determina el orden en el que esas bases se agregan al ____________.\n Ingrese las palabras faltantes para completar la oracion: ", "ARN mensajero")
+    print("¡Haz completado la transcripcion!")
+    print("")
+    pregunta("Cuando termina la transcripcion, y el ARN es procesado, sale del nucleo hacia el citoplasma, para encontrarse con unas fabricas de proteinas.\n Como se llaman estas proteinas que se encargan de leer el codigo del ARN mensajero?: ", "ribosomas")
+    pregunta("El ribosoma, lee el codigo del ARN mensajero para construir una cadena de: (Moleculas / ARN de transferencia / Aminoacidos / Codones).\n Ingrese la palabra correcta: ", "Aminoacidos")
+    pregunta("Moleculas de ARN de transferencia llevan a estos aminoacidos hacia el ribosoma, y el ARN mensajero se lee de a 3 bases por vez.\n Con que palabra se conoce a este triplete? (Atomos / Proteinas / Moleculas / Codon): ", "Codon")
+    pregunta("A medida que cada codon se lee, el ARN de transferencia entrega el Aminoacido correspondiente, agregandose a una cadena de aminoacidos la cual forman la: ", "proteina")
+    print("¡Haz completado la traducción!")
+    print("")
+    print("Haz Ganado!")
+    print("")
+    volverAJugar()
+
+def volverAJugar():
+    jugarDeNuevo = input("Volver a jugar: (SI / NO): ")
+    if jugarDeNuevo == 'SI':
+        global vidas
+        vidas = 3
+        jugar_expresion_genica()
+    else:
+        print("GAME OVER!")
+
+def jugar_juego_de_la_vida(primerComando):
+    if primerComando == 'jugar':
+        jugar_expresion_genica()
+    else:
+        print("Gracias por jugar a EXPRESION GENICA")
+
+
+    
+def main():
+    print("EXPRESION GENICA")
+    primerComando = ""
+    while primerComando != 'jugar' and primerComando != 'salir':
+        if(primerComando != ""):
+            print("Por favor, ingrese un comando valido")
+            print("")
+        primerComando = input("Ingrese la palabra 'jugar', si desea iniciar el juego, sino ingrese 'salir': ")
+    jugar_juego_de_la_vida(primerComando)
+
+if __name__ == "__main__":
+    main()
